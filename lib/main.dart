@@ -8,13 +8,21 @@ void main() {
           decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Color.fromARGB(255, 72, 19, 163),
-                Color.fromARGB(255, 170, 145, 212),
-                ],
+                Color.fromARGB(255, 66, 3, 173),
+                Color.fromARGB(255, 27, 10, 56),
+              ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
             ),
           ),
           child: const Center(
-            child: Text('This is my test text.'),
+            child: Text(
+              'Hello World',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 28,
+              ),
+            ),
           ),
         ),
       ),
