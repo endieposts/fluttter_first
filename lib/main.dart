@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
         body: GradientContainer(),
       ),
@@ -11,6 +11,8 @@ void main() {
 }
 
 class GradientContainer extends StatelessWidget {
+  const GradientContainer({super.key});
+
   @override
   Widget build(BuildContext context) {
     
@@ -27,7 +29,7 @@ class GradientContainer extends StatelessWidget {
           ),
           child: const Center(
             child: Text(
-              'Hello World',
+              'This is my test text\n with a linefeed',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 28,
