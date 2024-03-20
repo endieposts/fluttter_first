@@ -6,7 +6,7 @@ class MyTextBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Text(
-      'Test text\n with some linefeed!',
+      'Test text\n with a text widget!',
       style: TextStyle(
         color: Colors.white,
         fontSize: 28,
