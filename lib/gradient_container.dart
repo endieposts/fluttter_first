@@ -6,29 +6,30 @@ const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
 
 class GradientContainer extends StatelessWidget {
-  const GradientContainer({super.key});
+  const GradientContainer(this.fillColorStart, this.fillColorEnd,
+      {super.key});
+
+  final Color fillColorStart;
+  final Color fillColorEnd;
 
   @override
   Widget build(BuildContext context) {
-    
     return Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 65, 2, 175),
-                Color.fromARGB(255, 69, 46, 114),
-              ],
-              begin: startAlignment,
-              end: endAlignment,
-            ),
-          ),
-          child: Center(
-            child: MyTextBox('Test text\n with a text widget!!'),
-          ),
-        );
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            fillColorStart,
+            fillColorEnd,
+          ],
+          begin: startAlignment,
+          end: endAlignment,
+        ),
+      ),
+      child: Center(
+        child: MyTextBox('Test text\nwith a\ntest text widget!!'),
+      ),
+    );
 
     throw UnimplementedError();
   }
-
 }
-
