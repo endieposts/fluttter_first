@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class MyTextBox extends StatelessWidget {
-  const MyTextBox({super.key});
+  MyTextBox(String this.outputText, {super.key});
+
+  String outputText;
 
   @override
   Widget build(BuildContext context) {
-    return const Text(
-      'Test text\n with a text widget!',
-      style: TextStyle(
+    return Text(
+      outputText,
+      style: const TextStyle(
         color: Colors.white,
         fontSize: 28,
       ),

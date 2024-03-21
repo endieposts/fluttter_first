@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:first_flutter/my_text_box.dart';
 
-final startAlignment = Alignment.topLeft;
-final endAlignment = Alignment.bottomRight;
+const startAlignment = Alignment.topLeft;
+const endAlignment = Alignment.bottomRight;
 
 class GradientContainer extends StatelessWidget {
   const GradientContainer({super.key});
@@ -12,9 +12,9 @@ class GradientContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     
     return Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
-              colors: const [
+              colors: [
                 Color.fromARGB(255, 65, 2, 175),
                 Color.fromARGB(255, 69, 46, 114),
               ],
@@ -22,8 +22,8 @@ class GradientContainer extends StatelessWidget {
               end: endAlignment,
             ),
           ),
-          child: const Center(
-            child: MyTextBox(),
+          child: Center(
+            child: MyTextBox('Test text\n with a text widget!!'),
           ),
         );
 
