@@ -26,7 +26,7 @@ class GradientContainer extends StatelessWidget {
         ),
       ),
       child: Center(
-        child: MyTextBox('Test text\nwith a\ntest text widget!!'),
+        child: MyTextBox('Test text\nwith a\ntest text\nwidget!!'),
       ),
     );
 
