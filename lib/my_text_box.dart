@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MyTextBox extends StatelessWidget {
-  MyTextBox(this.outputText, {super.key});
+  const MyTextBox(this.outputText, {super.key});
 
   final String outputText;
 
